@@ -7,14 +7,14 @@ default: &default
 
 development:
   <<: *default
-  database: rails5base_development
+  database: consumer_chat_development
 
 test:
   <<: *default
-  database: rails5base_test
+  database: consumer_chat_test
 
 production:
   <<: *default
-  database: rails5base_production
-  username: rails5base
+  database: consumer_chat_production
+  username: consumer_chat
   password: <%= ENV['RAILS_BASE_DATABASE_PASSWORD'] %>
